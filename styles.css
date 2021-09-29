@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url("Montserrat-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat Regular";
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+label{
+  color: white;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+
+.square{
+  width: 16px;
+  height: 16px;
+  background:#1d1d1d ;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 1s ease;
+  border-radius: 100%;
+}
+.square:hover {
+  transition-duration: 0s;
+}
+.amount{
+  text-align: center;
+}
+.amount-input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.amount input{
+  border-radius: 5px;
+  border: solid 1px #5f80b8;
+  padding: 5px 0 5px 5px;
+}
+.amount input:focus{
+  outline: 0;
+}
+.amount button{
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #5f80b8;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 3px;
+}
